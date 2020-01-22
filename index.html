@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gerador de discursos para reuniões de negócios</title>
+
+    <!-- Google Material Design -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- Font loading -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:400,700,700i&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Assets -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="http://www.pokemongobrasil.com/wp-content/uploads/2015/09/cropped-favicon.png"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <h1>Gerador de discurso para business meetings</h1>
+      <p>
+        Quer arrasar na sua próxima <i>conference</i> e não sabe o que dizer
+        para impressionar? O coach quântico Victor Moraga, do alto da sua
+        experiência em corporações multinacionais, elaborou uma metodologia
+        infalível para criar discursos vendedores que irão reprogramar o DNA de
+        todos que ouvirem você falar.
+      </p>
+      <p>
+        Basta dizer quantas frases você precisa e pronto: nosso algoritmo de
+        inteligência artificial baseado em blockchain vai criar um discurso
+        alinhado aos princípios da Indústria 4.0 que vai causar aquele efeito
+        "UAU!" no seu público.
+      </p>
+
+      <form id="speech-meeting-generator" action="#" method="GET">
+        <div
+          class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+        >
+          <input
+            class="mdl-textfield__input"
+            type="text"
+            pattern="-?[0-9]*(\.[0-9]+)?"
+            id="sentences_quantity"
+            maxlength="3"
+            autofocus
+          />
+          <label class="mdl-textfield__label" for="sentences_quantity"
+            >Quantas frases?</label
+          >
+          <span class="mdl-textfield__error"
+            >Isso parece um número pra você?</span
+          >
+        </div>
+
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+        >
+          Gerar discurso matador
+        </button>
+      </form>
+
+      <div id="speech-wrapper" class="speech">
+        <h2>Ensaie o texto abaixo</h2>
+        <p id="speech"></p>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
